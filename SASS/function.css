@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Roboto-R;
+  src: url("../FONTS/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: Roboto-M;
+  src: url("../FONTS/Roboto-Medium.ttf"); }
+@font-face {
+  font-family: Roboto-B;
+  src: url("../FONTS/Roboto-Bold.ttf"); }
+/* COLOR */
+/* FONTS */
+/*----------------------------------*/
+/* CENTER FUNCTION */
+/*----------------------------------*/
+/* POSITION ABSOLUTE */
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%); }
+
+.center-w {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center-h {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+/* FLEX */
+.flex-w {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.flex-h {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* FONT */
+.fcenter {
+  text-align: center; }
+
+.fmiddle {
+  text-align: center;
+  vertical-align: middle; }
+
+/*----------------------------------*/
+/* PADDING/MARGIN */
+/*----------------------------------*/
+.p1 {
+  padding: 10px; }
+
+.p2 {
+  padding: 10%; }
+
+.p3 {
+  padding: 20px; }
+
+.m1 {
+  margin: 20px; }
+
+/*----------------------------------*/
+/* SPACE */
+/*----------------------------------*/
+.space1 {
+  height: 50px; }
+
+.space2 {
+  height: 100px; }
+
+.space3 {
+  height: 200px; }
+
+/*----------------------------------*/
+/* HEADLINES */
+/*----------------------------------*/
+h1 {
+  font-family: Roboto-B;
+  color: #FFF;
+  font-size: 5vw;
+  width: 100%;
+  text-transform: uppercase; }
+
+/*----------------------------------*/
+/* TEXT */
+/*----------------------------------*/
+article {
+  font-family: Roboto-R;
+  color: #004A59;
+  font-size: 20pt; }
+
+/*# sourceMappingURL=function.css.map */

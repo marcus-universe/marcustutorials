@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Roboto-R;
+  src: url("../FONTS/Roboto-Regular.ttf"); }
+@font-face {
+  font-family: Roboto-M;
+  src: url("../FONTS/Roboto-Medium.ttf"); }
+@font-face {
+  font-family: Roboto-B;
+  src: url("../FONTS/Roboto-Bold.ttf"); }
+/* COLOR */
+/* FONTS */
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  width: 100%; }
+
+.HEAD {
+  background-color: #001E2A;
+  background-attachment: fixed;
+  height: 100vh; }
+
+#DESK {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+  z-index: 3; }
+
+#BGDesk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+  z-index: 2; }
+
+.White-BG {
+  background-color: #FFF;
+  height: 100vh; }
+
+.Profil-IMG {
+  width: 40vw; }
+
+/*# sourceMappingURL=style.css.map */

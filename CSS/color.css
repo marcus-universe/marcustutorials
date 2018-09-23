@@ -1,0 +1,49 @@
+/*
+Error: Invalid CSS after "  src": expected ";", was ": url("../FONTS..."
+        on line 11 of D:\Projekte\Portfolio\SASS\setting.scss
+
+6:   font-family: Roboto-M;
+7:   src: url("../FONTS/Roboto-Medium.ttf");
+8:     }
+9: @font-face{
+10:   font-family: Roboto-B
+11:   src: url("../FONTS/Roboto-Bold.ttf");
+12:     }
+13: 
+14: /* COLOR *\/
+15: 
+16: $darkblue: #001E2A;
+
+Backtrace:
+D:\Projekte\Portfolio\SASS\setting.scss:11
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `call'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1254:in `rethrow'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:809:in `try_declaration'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:225:in `directive_body'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:217:in `directive'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+D:/Programme/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+D:/Programme/Koala/bin/sass:22:in `load'
+D:/Programme/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  src\": expected \";\", was \": url(\"../FONTS...\"\A         on line 11 of D:\Projekte\Portfolio\SASS\setting.scss\A \A 6:   font-family: Roboto-M;\A 7:   src: url(\"../FONTS/Roboto-Medium.ttf\");\A 8:     }\A 9: @font-face{\A 10:   font-family: Roboto-B\A 11:   src: url(\"../FONTS/Roboto-Bold.ttf\");\A 12:     }\A 13: \A 14: /* COLOR */\A 15: \A 16: $darkblue: #001E2A;"; }

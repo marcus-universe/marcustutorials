@@ -1,0 +1,48 @@
+@font-face{
+  font-family: Roboto-R;
+  src: url("../FONTS/Roboto-Regular.ttf");
+}
+@font-face{
+  font-family: Roboto-M;
+  src: url("../FONTS/Roboto-Medium.ttf");
+    }
+@font-face{
+  font-family: Roboto-B;
+  src: url("../FONTS/Roboto-Bold.ttf");
+    }
+
+/* COLOR */
+
+$darkblue: #001E2A;
+
+$lightblue: #26DDE9;
+
+$middleblue: #004A59;
+
+$white: #FFF;
+
+$gradingblue: radial-gradient(#22879b, #004A59);
+
+/* FONTS */
+$F1: Roboto-R;
+$F2: Roboto-M;
+$F3: Roboto-B;
+
+
+@mixin phone {
+  @media only screen and (min-width: 0px) and (max-width: 479px) {
+    @content
+  }
+}
+
+@mixin tablet {
+  @media only screen and (min-width: 480px) and (max-width: 1279px) {
+    @content
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1280px) {
+    @content
+  }
+}

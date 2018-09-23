@@ -1,0 +1,178 @@
+@import "./setting.scss";
+
+
+/*----------------------------------*/
+/* SCROLLBAR */
+/*----------------------------------*/
+
+::-webkit-scrollbar {
+  background-color: $darkblue;
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:$lightblue;
+}
+
+/*----------------------------------*/
+/* CENTER FUNCTION */
+/*----------------------------------*/
+
+
+/* POSITION ABSOLUTE */
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+    
+}
+
+
+.center-w{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.center-h{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+
+
+/* FLEX */
+.flex-w{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  }
+
+.flex-h{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.flex-l{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-r{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+/* MARGIN */
+.mcenter{
+    margin: 0 auto;
+}
+
+/* FONT */
+.fcenter{
+  text-align: center;
+}
+
+.fmiddle{
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+/*----------------------------------*/
+/* PADDING/MARGIN */
+/*----------------------------------*/
+.p1{
+  padding: 10px;
+}
+
+.p2{
+  padding: 10%;
+}
+
+.p3{
+  padding: 20px;
+}
+
+.m1{
+  margin: 20px;
+}
+
+.ml{
+  margin-left: 20px;
+}
+
+/*----------------------------------*/
+/* SPACE */
+/*----------------------------------*/
+
+.space1{
+  height: 50px;
+}
+
+.space2{
+  height: 100px;
+}
+
+.space3{
+  height: 200px;
+}
+
+
+/*----------------------------------*/
+/* HEADLINES */
+/*----------------------------------*/
+
+h1{
+  font-family: $F3;
+  color: $white;
+  font-size: 5vw;
+  width: 100%;
+  text-transform: uppercase;
+  }
+
+h2{
+    font-family: $F2;
+    color: $darkblue;
+    padding-bottom: 10vh;
+    font-size: 40pt;
+    width: 100%;
+    text-align: center;
+    
+}
+
+
+h3{
+  font-family: $F2;
+    color: $darkblue;
+    font-size: 20pt;
+    width: 100%;
+    text-align: center; 
+    transition: color 0.2s ease;
+}
+/*----------------------------------*/
+/* TEXT */
+/*----------------------------------*/
+article{
+  font-family: $F1;
+  color: $lightblue;
+  font-size: 20pt;
+}
+
+
+/*----------------------------------*/
+/* DESIGN */
+/*----------------------------------*/
+.BG{
+  background-color: $darkblue;
+}
+
+section{
+  width: 100%;
+}

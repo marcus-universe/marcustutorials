@@ -1,0 +1,103 @@
+@import "./setting.scss";
+
+
+@keyframes BigAnimation {
+  0% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Big.png);
+  }
+
+  50% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Hover_Big.png);
+  }
+
+  100% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Big.png);
+  }
+}
+
+.Profil-IMG {
+  background-image: url(../IMG/Design/Profil-Design/Image_Big.png); //background-color: $darkblue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  width: 900px;
+  height: 900px;
+  filter: drop-shadow(0 0 10px rgba(8, 23, 29, 0.8));
+  right: 0;
+  transition: all 0.5s ease;
+  animation: BigAnimation 2s ease infinite;
+}
+
+@include phone {
+
+  @keyframes SmallAnimation {
+    0% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    }
+
+    50% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Hover_Small.png);
+    }
+
+    100% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    }
+  }
+
+  .Profil-IMG {
+    background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    width: 480px;
+    height: 480px;
+    animation: SmallAnimation 2s ease infinite;
+  }
+}
+
+@include tablet {
+  
+  @keyframes MiddleAnimation {
+    0% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Middle.png);
+    }
+
+    50% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Hover_Middle.png);
+    }
+
+    100% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Middle.png);
+    }
+  }
+  
+  .Profil-IMG {
+    background-image: url(../IMG/Design/Profil-Design/Image_Middle.png);
+    width: 80%;
+    height: 80%;
+    margin-top: 0px;
+    animation: MiddleAnimation 2s ease infinite;
+  }
+}
+
+
+@include desktop {
+  @keyframes BigAnimation {
+  0% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Big.png);
+  }
+
+  50% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Hover_Big.png);
+  }
+
+  100% {
+    background-image: url(../IMG/Design/Profil-Design/Image_Big.png);
+  }
+}
+  
+  .Profil-IMG {
+    background-image: url(../IMG/Design/Profil-Design/Image_Big.png);
+    width: 900px;
+    height: 900px;
+    animation: BigAnimation 4s ease infinite;
+  }
+}
