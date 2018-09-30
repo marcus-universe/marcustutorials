@@ -2,177 +2,231 @@
 
 
 /*----------------------------------*/
+
 /* SCROLLBAR */
+
 /*----------------------------------*/
 
 ::-webkit-scrollbar {
-  background-color: $darkblue;
-  width: 8px;
-  height: 8px;
+    background-color: $darkblue;
+    width: 8px;
+    height: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color:$lightblue;
+    background-color: $lightblue;
 }
 
 /*----------------------------------*/
-/* CENTER FUNCTION */
-/*----------------------------------*/
 
+/* CENTER FUNCTION */
+
+/*----------------------------------*/
 
 /* POSITION ABSOLUTE */
-.center{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-    
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
 }
 
 
-.center-w{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.center-w {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.center-h{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  }
+.center-h {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 
 /* FLEX */
-.flex-w{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  }
 
-.flex-h{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  }
-
-.flex-l{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.flex-w {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.flex-r{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.flex-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.flex-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
 /* MARGIN */
-.mcenter{
+
+.mcenter {
     margin: 0 auto;
 }
 
 /* FONT */
-.fcenter{
-  text-align: center;
+
+.fcenter {
+    text-align: center;
 }
 
-.fmiddle{
-  text-align: center;
-  vertical-align: middle;
+.fmiddle {
+    text-align: center;
+    vertical-align: middle;
 }
 
 
 /*----------------------------------*/
+
 /* PADDING/MARGIN */
-/*----------------------------------*/
-.p1{
-  padding: 10px;
-}
-
-.p2{
-  padding: 10%;
-}
-
-.p3{
-  padding: 20px;
-}
-
-.m1{
-  margin: 20px;
-}
-
-.ml{
-  margin-left: 20px;
-}
 
 /*----------------------------------*/
+
+.p1 {
+    padding: 10px;
+}
+
+.p2 {
+    padding: 10%;
+}
+
+.p3 {
+    padding: 20px;
+}
+
+.m1 {
+    margin: 20px;
+}
+
+.ml {
+    margin-left: 20px;
+}
+
+/*----------------------------------*/
+
 /* SPACE */
-/*----------------------------------*/
-
-.space1{
-  height: 50px;
-}
-
-.space2{
-  height: 100px;
-}
-
-.space3{
-  height: 200px;
-}
-
 
 /*----------------------------------*/
+
+.space1 {
+    height: 50px;
+}
+
+.space2 {
+    height: 100px;
+}
+
+.space3 {
+    height: 200px;
+}
+
+
+/*----------------------------------*/
+
 /* HEADLINES */
+
 /*----------------------------------*/
 
-h1{
-  font-family: $F3;
-  color: $white;
-  font-size: 5vw;
-  width: 100%;
-  text-transform: uppercase;
-  }
+h1 {
+    font-family: $F3;
+    color: $white;
+    font-size: 5vw;
+    width: 100%;
+    text-transform: uppercase;
+}
 
-h2{
+h2 {
     font-family: $F2;
     color: $darkblue;
     padding-bottom: 10vh;
     font-size: 40pt;
     width: 100%;
     text-align: center;
-    
+
 }
 
 
-h3{
-  font-family: $F2;
+h3 {
+    font-family: $F2;
     color: $darkblue;
     font-size: 20pt;
     width: 100%;
-    text-align: center; 
+    text-align: center;
     transition: color 0.2s ease;
 }
+
+h4 {
+    font-family: $F2;
+    color: $white;
+    font-size: 26pt;
+    width: 100%;
+    text-align: center;
+    transition: color 0.2s ease;
+    border-bottom: 4px solid $white;
+}
+
+h5 {
+    font-size: 40pt;
+    color: $white;
+    font-family: $F2;
+    padding-bottom: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
 /*----------------------------------*/
+
 /* TEXT */
+
 /*----------------------------------*/
-article{
-  font-family: $F1;
-  color: $lightblue;
-  font-size: 20pt;
+
+article {
+    font-family: $F1;
+    color: $lightblue;
+    font-size: 20pt;
 }
 
+.TextBox1 {
+    font-family: $F1;
+    font-size: 16pt;
+    color: $grey;
+    padding: 50px;
+    width: 70%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.53);
+    border-radius: 50px;
+}
+
+.TextBox1 b {
+    font-size: 20pt;
+    color: $darkblue;
+}
 
 /*----------------------------------*/
+
 /* DESIGN */
+
 /*----------------------------------*/
-.BG{
-  background-color: $darkblue;
+
+.BG {
+    background-color: $darkblue;
 }
 
-section{
-  width: 100%;
+section {
+    width: 100%;
 }

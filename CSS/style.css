@@ -666,7 +666,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .THEMA {
+    width: 300px; } }
 /* ################################################## */
 /* Impressum */
 /* ################################################## */
@@ -714,6 +717,113 @@ body {
   .BigHead_Impressum {
     font-size: 20pt; } }
 /* ################################################## */
+/* About ME */
+/* ################################################## */
+.HEADER {
+  background-color: #001E2A;
+  height: 400px; }
+
+.HEADER-HEADLINE {
+  text-align: center;
+  vertical-align: middle;
+  color: #26DDE9; }
+
+.About_Me {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh; }
+
+.ProfilBild {
+  background-color: #001E2A;
+  min-width: 50%;
+  height: 100%; }
+
+.PBild {
+  background-image: url(../IMG/Gallery/Profil_Bild/PBild.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 10px black;
+          box-shadow: 0px 0px 10px black;
+  border-radius: 300px; }
+
+.Biografie {
+  background-color: #FFF;
+  width: 50%;
+  height: 100%; }
+
+@media only screen and (min-width: 480px) and (max-width: 1279px) {
+  .About_Me {
+    height: auto; }
+
+  .ProfilBild {
+    width: 100%;
+    height: 70%; }
+
+  .Biografie {
+    width: 100%; } }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .About_Me {
+    height: auto; }
+
+  .ProfilBild {
+    width: 100%;
+    height: 70%; }
+
+  .PBild {
+    width: 300px;
+    height: 300px; }
+
+  .Biografie {
+    width: 100%;
+    height: auto;
+    padding: 10px; } }
+/* SKILLS */
+.Skills {
+  height: auto;
+  background-color: #004A59;
+  padding: 0px;
+  padding-bottom: 100px; }
+
+.SkillsSpalte {
+  width: 50%;
+  padding: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.SkillsSpalte b {
+  font-family: Roboto-B;
+  font-size: 20pt;
+  color: #26DDE9;
+  padding-bottom: 50px; }
+
+.SkillsSpalte div {
+  height: 30px;
+  background-color: #001E2A;
+  color: #26DDE9;
+  font-family: Roboto-M;
+  font-size: 18pt;
+  text-align: left;
+  padding-left: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+
+@media only screen and (min-width: 480px) and (max-width: 1279px) {
+  .SkillsSpalte {
+    width: 100%; }
+
+  .flexSKILLS {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+/* ################################################## */
 /* Footer */
 /* ################################################## */
 footer {
@@ -723,7 +833,9 @@ footer {
 
 .footer_IconRay {
   width: 100%;
-  padding-top: 50px; }
+  padding-top: 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .footer_IconRay img {
   width: 100px;
@@ -764,5 +876,14 @@ footer {
   font-size: 16pt;
   text-align: center;
   bottom: 0; }
+
+@media only screen and (min-width: 480px) and (max-width: 1279px) {
+  footer {
+    margin-bottom: 100px;
+    padding-bottom: 100px; } }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  footer {
+    margin-bottom: 100px;
+    padding-bottom: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
