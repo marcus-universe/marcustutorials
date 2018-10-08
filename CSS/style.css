@@ -442,7 +442,7 @@ body {
   .BGhalf {
     position: relative;
     width: 100%;
-    height: 60vh; }
+    height: auto; }
 
   .ProfilSeite {
     height: auto; }
@@ -721,23 +721,39 @@ body {
 /* ################################################## */
 .HEADER {
   background-color: #001E2A;
-  height: 400px; }
+  height: 400px;
+  z-index: 1; }
 
 .HEADER-HEADLINE {
   text-align: center;
   vertical-align: middle;
-  color: #26DDE9; }
+  color: #26DDE9;
+  font-size: 40pt;
+  z-index: 3; }
+
+.Fluid {
+  position: absolute;
+  background-image: url(../IMG/Design/Fluid_Simulation.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 2;
+  width: 100%;
+  height: 400px;
+  top: 150px; }
 
 .About_Me {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 100vh; }
+  height: 100vh;
+  z-index: 4; }
 
 .ProfilBild {
   background-color: #001E2A;
   min-width: 50%;
-  height: 100%; }
+  height: 100%;
+  z-index: 4; }
 
 .PBild {
   background-image: url(../IMG/Gallery/Profil_Bild/PBild.jpg);
@@ -753,7 +769,8 @@ body {
 .Biografie {
   background-color: #FFF;
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  z-index: 4; }
 
 @media only screen and (min-width: 480px) and (max-width: 1279px) {
   .About_Me {
@@ -764,7 +781,10 @@ body {
     height: 70%; }
 
   .Biografie {
-    width: 100%; } }
+    width: 100%; }
+
+  .Fluid {
+    top: 200px; } }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .About_Me {
     height: auto; }
@@ -780,7 +800,11 @@ body {
   .Biografie {
     width: 100%;
     height: auto;
-    padding: 10px; } }
+    padding: 10px; }
+
+  .Fluid {
+    top: 230px;
+    height: 300px; } }
 /* SKILLS */
 .Skills {
   height: auto;
@@ -819,6 +843,14 @@ body {
 @media only screen and (min-width: 480px) and (max-width: 1279px) {
   .SkillsSpalte {
     width: 100%; }
+
+  .flexSKILLS {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .SkillsSpalte {
+    width: 100%;
+    padding: 10px; }
 
   .flexSKILLS {
     -ms-flex-wrap: wrap;
