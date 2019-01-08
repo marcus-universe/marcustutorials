@@ -210,4 +210,18 @@ article {
 section {
   width: 100%; }
 
+/*----------------------------------*/
+/* Animation */
+/*----------------------------------*/
+.FadeIn {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+.FadeOut {
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+.none {
+  display: none; }
+
 /*# sourceMappingURL=function.css.map */

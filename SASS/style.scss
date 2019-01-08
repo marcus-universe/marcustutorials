@@ -4,13 +4,13 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-  width: 100%;
+    width: 100%;
 }
 
 
@@ -19,143 +19,143 @@ body {
 // NAVBAR
 // ###############################################
 .Navigation {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-  background-color: $darkblue;
-  transition: box-shadow 0.5s ease;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: $darkblue;
+    transition: box-shadow 0.5s ease;
 }
 
 .Navigation > li {
-  display: inline;
-  margin-left: 20px;
-  list-style: none;
+    display: inline;
+    margin-left: 20px;
+    list-style: none;
 }
 
 .Navigation > li > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .navbutton {
-  color: white;
-  font-family: $F2;
-  text-decoration: none;
-  padding: 20px 20px 20px 20px;
-  background-color: $darkblue;
-  border-bottom: 2px solid $darkblue;
-  transition: all 0.5s ease;
+    color: white;
+    font-family: $F2;
+    text-decoration: none;
+    padding: 20px 20px 20px 20px;
+    background-color: $darkblue;
+    border-bottom: 2px solid $darkblue;
+    transition: all 0.5s ease;
 }
 
 .navbutton:hover {
-  color: $lightblue;
-  border-bottom: 2px solid $lightblue;
+    color: $lightblue;
+    border-bottom: 2px solid $lightblue;
 }
 
 .navleiste {
-  box-shadow: 0px 0 10px $lightblue;
+    box-shadow: 0px 0 10px $lightblue;
 }
 
 .navpadding {
-  padding: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .navicon {
-  background-image: url(../IMG/Icons/Nav/NavButton.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 80px;
-  width: 80px;
-  cursor: pointer;
-  padding: 10px;
-  transition: background 0.2s ease;
-  display: none;
+    background-image: url(../IMG/Icons/Nav/NavButton.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background 0.2s ease;
+    display: none;
 }
 
 .navicon_clicked {
-  background-image: url(../IMG/Icons/Nav/NavButton_Click.svg);
+    background-image: url(../IMG/Icons/Nav/NavButton_Click.svg);
 }
 
 .mobileNAV {
-  display: none;
+    display: none;
 }
 
 @include tablet {
-  .Navigation {
-    bottom: 0;
-    z-index: 999;
-  }
+    .Navigation {
+        bottom: 0;
+        z-index: 999;
+    }
 
-  .Navigation > li {
-    display: none;
-  }
+    .Navigation > li {
+        display: none;
+    }
 
-  .navicon {
-    display: block;
-  }
+    .navicon {
+        display: block;
+    }
 
-  .mobileNAV {
-    display: flex;
-    position: fixed;
-    z-index: 998;
-    background-color: $darkblue;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    bottom: -100%;
-    transition: all 0.5s ease;
-  }
+    .mobileNAV {
+        display: flex;
+        position: fixed;
+        z-index: 998;
+        background-color: $darkblue;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        bottom: -100%;
+        transition: all 0.5s ease;
+    }
 
-  .mobileNAV li a {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 40pt;
-    text-decoration: none;
-  }
+    .mobileNAV li a {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40pt;
+        text-decoration: none;
+    }
 
-  .bfade {
-    bottom: 0;
-  }
+    .bfade {
+        bottom: 0;
+    }
 
 }
 
 @include phone {
-  .Navigation {
-    bottom: 0;
-    z-index: 999;
-  }
+    .Navigation {
+        bottom: 0;
+        z-index: 999;
+    }
 
-  .Navigation > li {
-    display: none;
-  }
+    .Navigation > li {
+        display: none;
+    }
 
-  .navicon {
-    display: block;
-  }
+    .navicon {
+        display: block;
+    }
 
-  .mobileNAV {
-    display: flex;
-    position: fixed;
-    z-index: 998;
-    background-color: $darkblue;
-    width: 100%;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
-    bottom: -100%;
-    transition: all 0.5s ease;
-  }
+    .mobileNAV {
+        display: flex;
+        position: fixed;
+        z-index: 998;
+        background-color: $darkblue;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        bottom: -100%;
+        transition: all 0.5s ease;
+    }
 
-  .mobileNAV li a {
-    text-align: center;
-    vertical-align: middle;
-    font-size: 40pt;
-    text-decoration: none;
-  }
+    .mobileNAV li a {
+        text-align: center;
+        vertical-align: middle;
+        font-size: 40pt;
+        text-decoration: none;
+    }
 
-  .bfade {
-    bottom: 0;
-  }
+    .bfade {
+        bottom: 0;
+    }
 
 }
 
@@ -164,70 +164,70 @@ body {
 // HEADER
 // ###############################################
 .HEAD {
-  background-color: $darkblue;
-  background-attachment: fixed;
-  height: 100vh;
+    background-color: $darkblue;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
 #DESK {
-  position: absolute;
-  width: 60%;
-  height: 60%;
-  left: 50%;
-  top: 50%;
-  display: block;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 1;
-  z-index: 3;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 1;
+    z-index: 3;
 }
 
 #BGDesk {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 40%;
-  display: block;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0.1;
-  z-index: 2;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 40%;
+    display: block;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0.1;
+    z-index: 2;
 }
 
 @include tablet {
-  .HEAD {
-    height: 50vh;
-  }
+    .HEAD {
+        height: 50vh;
+    }
 
-  #DESK {
-    height: 50vh;
-    width: 98vw;
-    top: 30%;
-    overflow: hidden;
-  }
+    #DESK {
+        height: 50vh;
+        width: 98vw;
+        top: 30%;
+        overflow: hidden;
+    }
 
-  #BGDesk {
-    top: 35%;
-    overflow: hidden;
-  }
+    #BGDesk {
+        top: 35%;
+        overflow: hidden;
+    }
 }
 
 @include phone {
-  .HEAD {
-    height: 50vh;
-  }
+    .HEAD {
+        height: 50vh;
+    }
 
-  #DESK {
-    height: 50vh;
-    width: 98vw;
-    top: 30%;
-    overflow: hidden;
-  }
+    #DESK {
+        height: 50vh;
+        width: 98vw;
+        top: 30%;
+        overflow: hidden;
+    }
 
-  #BGDesk {
-    top: 35%;
-    overflow: hidden;
-  }
+    #BGDesk {
+        top: 35%;
+        overflow: hidden;
+    }
 }
 
 
@@ -235,167 +235,167 @@ body {
 // WELCOME
 // ###############################################
 .DarkBlue-BG {
-  position: relative;
-  z-index: 3;
-  background-color: $darkblue;
-  height: 100vh; //width: 45vw;
-  width: 40%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    position: relative;
+    z-index: 3;
+    background-color: $darkblue;
+    height: 100vh; //width: 45vw;
+    width: 40%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ProfilSeite {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .design-profil-line {
-  position: absolute;
-  background-image: url(../IMG/Design/Profil-Design/SVG/DesignProfilLine.svg); //background-color: aqua;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 96px;
-  height: 100vh;
-  margin-top: 0;
-  margin-left: 38%;
-  z-index: 5;
+    position: absolute;
+    background-image: url(../IMG/Design/Profil-Design/SVG/DesignProfilLine.svg); //background-color: aqua;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 96px;
+    height: 100vh;
+    margin-top: 0;
+    margin-left: 38%;
+    z-index: 5;
 }
 
 .BGhalf {
-  position: absolute;
-  background: $gradingblue;
-  height: 100vh; //width: 54vw;
-  width: 60%;
-  right: 0;
-  z-index: 3;
+    position: absolute;
+    background: $gradingblue;
+    height: 100vh; //width: 54vw;
+    width: 60%;
+    right: 0;
+    z-index: 3;
 }
 
 
 .ArticleProfil {
-  z-index: 4;
-  margin-left: 20px;
+    z-index: 4;
+    margin-left: 20px;
 
 }
 
 .ProfilText {
-  margin-left: 50px;
-  width: 30vw;
+    margin-left: 50px;
+    width: 30vw;
 }
 
 @include tablet {
 
-  .DarkBlue-BG {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+    .DarkBlue-BG {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
-  .BGhalf {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+    .BGhalf {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
-  .ProfilSeite {
-    height: auto;
-    display: block;
-  }
+    .ProfilSeite {
+        height: auto;
+        display: block;
+    }
 
-  .design-profil-line {
-    display: none;
+    .design-profil-line {
+        display: none;
 
-  }
+    }
 
-  .ArticleProfil {
-    margin: 0;
-    width: 98vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    .ArticleProfil {
+        margin: 0;
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-  }
+    }
 
-  .ArticleProfil > div {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
-    padding: 20px;
-    border: 4px solid $middleblue;
-    border-radius: 30px;
-  }
+    .ArticleProfil > div {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
+        padding: 20px;
+        border: 4px solid $middleblue;
+        border-radius: 30px;
+    }
 
-  .ProfilText {
-    width: auto;
-    margin: 0 auto;
-    padding: 10px;
-    min-width: 400px;
-    max-width: 500px;
-  }
+    .ProfilText {
+        width: auto;
+        margin: 0 auto;
+        padding: 10px;
+        min-width: 400px;
+        max-width: 500px;
+    }
 
-  .HelloWorldBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
+    .HelloWorldBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .HelloWorld {
-    width: 80%;
-    margin: 0 auto;
-  }
+    .HelloWorld {
+        width: 80%;
+        margin: 0 auto;
+    }
 
 }
 
 
 @include phone {
 
-  .DarkBlue-BG {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+    .DarkBlue-BG {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
-  .BGhalf {
-    position: relative;
-    width: 100%;
-    height: auto;
-  }
+    .BGhalf {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
-  .ProfilSeite {
-    height: auto;
-  }
+    .ProfilSeite {
+        height: auto;
+    }
 
-  .design-profil-line {
-    display: none;
-  }
+    .design-profil-line {
+        display: none;
+    }
 
-  .ArticleProfil {
-    margin: 0;
-    width: 98vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
+    .ArticleProfil {
+        margin: 0;
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-  .ProfilText {
-    width: auto;
-    margin: 0 auto;
-    padding: 20px;
-  }
+    .ProfilText {
+        width: auto;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-  .HelloWorldBox {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
+    .HelloWorldBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .HelloWorld {
-    width: 80%;
-    margin: 0 auto;
-  }
+    .HelloWorld {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -406,183 +406,183 @@ body {
 // THEMEN
 // ###############################################
 .ThemenSECTION {
-  position: relative;
-  background: $white;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    position: relative;
+    background: $white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .ThemenBoxen {
-  padding: 0 200px 0 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    padding: 0 200px 0 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .THEMA {
-  width: 400px;
-  height: 600px;
-  background-color: $white;
-  margin: 0 10px 0 10px;
-  transition: all 0.2s ease;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
-  z-index: 3;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+    width: 400px;
+    height: 600px;
+    background-color: $white;
+    margin: 0 10px 0 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.24);
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 .thementext {
-  padding: 20px;
-  font-family: $F1;
-  font-size: 18pt;
-  transition: color 0.2s ease;
-  color: $darkblue;
+    padding: 20px;
+    font-family: $F1;
+    font-size: 18pt;
+    transition: color 0.2s ease;
+    color: $darkblue;
 }
 
 .ThemenDesign {
-  position: absolute;
-  background-image: url(../IMG/Design/Themen_Design.png);
-  background-size: cover 50%;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  left: 50%;
-  bottom: 0%;
-  transform: translateX(-50%);
+    position: absolute;
+    background-image: url(../IMG/Design/Themen_Design.png);
+    background-size: cover 50%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
 
 }
 
 // --------------------------------------------------------
 .IconThema {
-  width: 200px;
-  height: 200px;
-  background-position: center;
-  background-size: contain;
-  background-origin: content-box;
-  background-repeat: no-repeat;
-  margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
 .THEMA:hover {
-  background-color: $darkblue;
-  cursor: pointer;
-  transform: scale(1.1);
-  z-index: 5;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.70);
+    background-color: $darkblue;
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.70);
 
 }
 
 .THEMA:hover h3 {
-  color: $lightblue;
+    color: $lightblue;
 }
 
 .THEMA:hover .thementext {
-  color: $lightblue;
+    color: $lightblue;
 }
 
 
 // Music
 .MusicIcon {
-  background-image: url(../IMG/Icons/Themen/Musik.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/Musik.svg);
+    transition: background 0.2s ease;
 }
 
 
 .MusicThema:hover .MusicIcon {
-  background-image: url(../IMG/Icons/Themen/Musik_Hover.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/Musik_Hover.svg);
+    transition: background 0.2s ease;
 }
 
 // Iluustration
 .IllustrationIcon {
-  background-image: url(../IMG/Icons/Themen/Illustration.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/Illustration.svg);
+    transition: background 0.2s ease;
 }
 
 .IllustrationThema:hover .IllustrationIcon {
-  background-image: url(../IMG/Icons/Themen/Illustration_Hover.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/Illustration_Hover.svg);
+    transition: background 0.2s ease;
 }
 
 // Webvideo
 .VideoIcon {
-  background-image: url(../IMG/Icons/Themen/WebVideo_Hover.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/WebVideo_Hover.svg);
+    transition: background 0.2s ease;
 }
 
 .WebvideoThema:hover .VideoIcon {
-  background-image: url(../IMG/Icons/Themen/WebVideo.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/WebVideo.svg);
+    transition: background 0.2s ease;
 }
 
 .DimensionIcon {
-  background-image: url(../IMG/Icons/Themen/3D.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/3D.svg);
+    transition: background 0.2s ease;
 }
 
 .Dimension:hover .DimensionIcon {
-  background-image: url(../IMG/Icons/Themen/3D_hover.svg);
-  transition: background 0.2s ease;
+    background-image: url(../IMG/Icons/Themen/3D_hover.svg);
+    transition: background 0.2s ease;
 }
 
 
 @include tablet {
-  .ThemenSECTION {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: auto;
-    flex-direction: column;
-    width: 100%;
-  }
+    .ThemenSECTION {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .ThemenDesign {
-    background-size: cover 50%;
-    width: 100%;
-    height: 100%;
-  }
+    .ThemenDesign {
+        background-size: cover 50%;
+        width: 100%;
+        height: 100%;
+    }
 
-  .ThemenBoxen {
-    flex-direction: column;
-    padding: 0;
-    margin: 0 auto;
+    .ThemenBoxen {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
 
-  }
+    }
 
 }
 
 @include phone {
-  .ThemenSECTION {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: auto;
-    flex-direction: column;
-    width: 100%;
-  }
+    .ThemenSECTION {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  .ThemenDesign {
-    background-size: cover 50%;
-    width: 100%;
-    height: 100%;
-  }
+    .ThemenDesign {
+        background-size: cover 50%;
+        width: 100%;
+        height: 100%;
+    }
 
-  .ThemenBoxen {
-    flex-direction: column;
-    padding: 0;
-    margin: 0 auto;
+    .ThemenBoxen {
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto;
 
-  }
+    }
 
-  .THEMA {
-    width: 300px;
-  }
+    .THEMA {
+        width: 300px;
+    }
 
 }
 
@@ -593,62 +593,62 @@ body {
 /* ################################################## */
 
 .bodyBG {
-  background-color: $middleblue;
+    background-color: $middleblue;
 }
 
 .ImpressumTITLE {
-  color: $white;
+    color: $white;
 }
 
 
 .ImpressumTEXT {
-  color: $white;
-  width: 50%;
-  margin: 0 auto 100px auto;
-  background-color: $middleblue;
-  padding: 20px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.30);
-  hyphens: auto;
+    color: $white;
+    width: 50%;
+    margin: 0 auto 100px auto;
+    background-color: $middleblue;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.30);
+    hyphens: auto;
 }
 
 .BigHead_Impressum {
-  color: $lightblue;
-  text-align: left;
+    color: $lightblue;
+    text-align: left;
 
 }
 
 
 .KONTAKT-Impressum li {
-  list-style: none;
+    list-style: none;
 }
 
 .KONTAKT-Impressum li a {
-  color: $lightblue;
+    color: $lightblue;
 
 }
 
 .Links_Impressum {
-  color: $lightblue;
+    color: $lightblue;
 }
 
 @include tablet {
-  .ImpressumTEXT {
-    width: 80%;
-  }
+    .ImpressumTEXT {
+        width: 80%;
+    }
 
-  .BigHead_Impressum {
-    font-size: 25pt;
-  }
+    .BigHead_Impressum {
+        font-size: 25pt;
+    }
 }
 
 @include phone {
-  .ImpressumTEXT {
-    width: 90%;
-  }
+    .ImpressumTEXT {
+        width: 90%;
+    }
 
-  .BigHead_Impressum {
-    font-size: 20pt;
-  }
+    .BigHead_Impressum {
+        font-size: 20pt;
+    }
 }
 
 /* ################################################## */
@@ -658,171 +658,316 @@ body {
 /* ################################################## */
 
 .HEADER {
-  background-color: $darkblue;
-  height: 400px;
-  z-index: 1;
+    background-color: $darkblue;
+    height: 400px;
+    z-index: 1;
 }
 
 .HEADER-HEADLINE {
-  text-align: center;
-  vertical-align: middle;
-  color: $lightblue;
-  font-size: 40pt;
-  z-index: 3;
+    text-align: center;
+    vertical-align: middle;
+    color: $lightblue;
+    font-size: 40pt;
+    z-index: 3;
 }
 
 .Fluid {
-  position:absolute;
-  background-image: url(../IMG/Design/Fluid_Simulation.png);
-  background-size: cover;
-  background-position: top;
-  background-repeat: no-repeat;
-  z-index: 2;
-  width: 100%;
-  height: 400px;
-  top: 150px;
+    position: absolute;
+    background-image: url(../IMG/Design/Fluid_Simulation.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 2;
+    width: 100%;
+    height: 400px;
+    top: 150px;
 }
 
 .About_Me {
-  width: 100%;
-  flex-wrap: wrap;
-  height: 100vh;
-  z-index: 4;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100vh;
+    z-index: 4;
 }
 
 .ProfilBild {
-  background-color: $darkblue;
-  min-width: 50%;
-  height: 100%;
-  z-index: 4;
+    background-color: $darkblue;
+    min-width: 50%;
+    height: 100%;
+    z-index: 4;
 }
 
 .PBild {
-  background-image: url(../IMG/Gallery/Profil_Bild/PBild.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 500px;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 300px;
+    background-image: url(../IMG/Gallery/Profil_Bild/PBild.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 300px;
 
 }
 
 .Biografie {
-  background-color: $white;
-  width: 50%;
-  height: 100%;
-  z-index: 4;
+    background-color: $white;
+    width: 50%;
+    height: 100%;
+    z-index: 4;
 }
 
 @include tablet {
-  .About_Me {
-    height: auto;
-  }
+    .About_Me {
+        height: auto;
+    }
 
-  .ProfilBild {
-    width: 100%;
-    height: 70%;
-  }
+    .ProfilBild {
+        width: 100%;
+        height: 70%;
+    }
 
-  .Biografie {
-    width: 100%;
-  }
-  
-  .Fluid{
-    top: 200px;
-  }
+    .Biografie {
+        width: 100%;
+    }
+
+    .Fluid {
+        top: 200px;
+    }
 
 }
 
 
 @include phone {
-  .About_Me {
-    height: auto;
-  }
+    .About_Me {
+        height: auto;
+    }
 
-  .ProfilBild {
-    width: 100%;
-    height: 70%;
-  }
+    .ProfilBild {
+        width: 100%;
+        height: 70%;
+    }
 
-  .PBild {
-    width: 300px;
-    height: 300px;
-  }
+    .PBild {
+        width: 300px;
+        height: 300px;
+    }
 
-  .Biografie {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-   .Fluid{
-    top: 230px;
-     height: 300px;
-  }
+    .Biografie {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .Fluid {
+        top: 230px;
+        height: 300px;
+    }
 
 }
 
 /* SKILLS */
 
 .Skills {
-  height: auto;
-  background-color: $middleblue;
-  padding: 0px;
-  padding-bottom: 100px;
+    height: auto;
+    background-color: $middleblue;
+    padding: 0px;
+    padding-bottom: 100px;
 
 }
 
 .SkillsSpalte {
-  width: 50%;
-  padding: 100px;
-  flex-wrap: wrap;
+    width: 50%;
+    padding: 100px;
+    flex-wrap: wrap;
 
 }
 
 .SkillsSpalte b {
-  font-family: $F3;
-  font-size: 20pt;
-  color: $lightblue;
-  padding-bottom: 50px;
+    font-family: $F3;
+    font-size: 20pt;
+    color: $lightblue;
+    padding-bottom: 50px;
 }
 
 .SkillsSpalte div {
-  height: 30px;
-  background-color: $darkblue;
-  color: $lightblue;
-  font-family: $F2;
-  font-size: 18pt;
-  text-align: left;
-  padding-left: 10px;
-  align-content: center;
-  vertical-align: middle;
-  border-radius: 30px;
-  margin-top: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    height: 30px;
+    background-color: $darkblue;
+    color: $lightblue;
+    font-family: $F2;
+    font-size: 18pt;
+    text-align: left;
+    padding-left: 10px;
+    align-content: center;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
 @include tablet {
-  .SkillsSpalte {
-    width: 100%;
-  }
+    .SkillsSpalte {
+        width: 100%;
+    }
 
-  .flexSKILLS {
-    flex-wrap: wrap;
-  }
+    .flexSKILLS {
+        flex-wrap: wrap;
+    }
 }
 
-@include phone{
-  .SkillsSpalte {
-    width: 100%;
-    padding: 10px;
-  }
+@include phone {
+    .SkillsSpalte {
+        width: 100%;
+        padding: 10px;
+    }
 
-  .flexSKILLS {
-    flex-wrap: wrap;
-  }
+    .flexSKILLS {
+        flex-wrap: wrap;
+    }
 }
+
+/* Kontakt */
+
+.Kontakt {
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    background-color: white;
+}
+
+form {
+    font-family: $F2;
+    font-size: 20pt;
+    width: 80%;
+}
+
+form > input {
+    width: 30%;
+    height: 40px;
+    border: 4px solid $darkblue;
+    border-radius: 20px;
+    padding-left: 20px;
+    transition: all 0.5s ease;
+    font-family: $F2;
+    color: $grey;
+}
+
+form > input:focus {
+    background: $darkblue;
+    color: white;
+    padding-left: 30px;
+    width: 60%;
+}
+
+form > input:focus::placeholder {
+    color: $lightblue;
+}
+
+form > textarea {
+    resize: none;
+    width: 80%;
+    height: 600px;
+    padding: 20px;
+    border: 4px solid $darkblue;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+    font-size: 14pt;
+}
+
+form > textarea:focus {
+    background-color: $darkblue;
+    color: white;
+}
+
+form > textarea::placeholder {
+    color: $grey;
+    font-family: $F2;
+    font-size: 14pt;
+
+}
+
+form > textarea:focus::placeholder {
+    color: $middleblue;
+}
+
+
+.Absenden {
+    background-color: $darkblue;
+    color: white;
+    font-family: $F3;
+    font-size: 14pt;
+}
+
+.Absenden:focus {
+    width: 30%;
+}
+
+/* ################################################## */
+
+/* GALLERY */
+
+/* ################################################## */
+
+select {
+    margin: auto 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.filter {
+    width: 50%;
+    height: 40px;
+    padding-left: 10px;
+    font-family: $F2;
+    font-size: 16px;
+    background-color: $darkblue;
+    color: $lightblue;
+    margin-bottom: 100px;
+}
+
+option {
+    transition: all 0.5s ease;
+}
+
+.Gallery {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.imageboxes {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+.imagelink {
+    margin: 5px;
+    transform: scale(1);
+    transition: all 0.3s ease;
+    
+    border: none;
+    padding: 0;
+}
+
+.imagelink:hover {
+    //transform: scale(1.1);
+    z-index: 10;
+    background-color: white;
+}
+
+.imageboxes:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+}
+
+.GalleryWrap {
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
 
 
 /* ################################################## */
@@ -832,69 +977,69 @@ body {
 /* ################################################## */
 
 footer {
-  background-color: $darkblue;
-  width: 100%;
-  height: 600px;
+    background-color: $darkblue;
+    width: 100%;
+    height: 600px;
 }
 
 
 .footer_IconRay {
-  width: 100%;
-  padding-top: 50px;
-  flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+    flex-wrap: wrap;
 }
 
 .footer_IconRay img {
-  width: 100px;
-  height: 100px;
-  transition: all 0.5s ease;
-  margin: 0 20px 0 20px;
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease;
+    margin: 0 20px 0 20px;
 }
 
 .footer_IconRay img:hover {
-  width: 100px;
-  height: 100px;
-  cursor: pointer;
-  border-radius: 50px;
-  box-shadow: 0px 0px 20px $lightblue;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px $lightblue;
 }
 
 .ImpressumButton {
-  text-decoration: none;
-  color: $white;
-  font-family: $F2;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 18pt;
-  padding: 0;
-  transition: all 0.5s ease;
+    text-decoration: none;
+    color: $white;
+    font-family: $F2;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18pt;
+    padding: 0;
+    transition: all 0.5s ease;
 }
 
 .ImpressumButton:hover {
-  color: $lightblue;
-  box-shadow: 0px 0px 20px $lightblue;
-  padding: 20px;
-  border-radius: 50px;
+    color: $lightblue;
+    box-shadow: 0px 0px 20px $lightblue;
+    padding: 20px;
+    border-radius: 50px;
 }
 
 .title-footer {
-  color: $middleblue;
-  font-family: $F2;
-  font-size: 16pt;
-  text-align: center;
-  bottom: 0;
+    color: $middleblue;
+    font-family: $F2;
+    font-size: 16pt;
+    text-align: center;
+    bottom: 0;
 }
 
 @include tablet {
-  footer {
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-  }
+    footer {
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
 }
 
 @include phone {
-  footer {
-    margin-bottom: 100px;
-    padding-bottom: 100px;
-  }
+    footer {
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
 }

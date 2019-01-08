@@ -230,3 +230,19 @@ article {
 section {
     width: 100%;
 }
+
+/*----------------------------------*/
+/* Animation */
+/*----------------------------------*/
+
+.FadeIn{
+    transform: scale(1);
+}
+
+.FadeOut{
+    transform: scale(0);
+}
+
+.none{
+    display: none;
+}
