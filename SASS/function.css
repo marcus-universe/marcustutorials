@@ -10,6 +10,17 @@
 /* COLOR */
 /* FONTS */
 /*----------------------------------*/
+/* SCROLLBAR */
+/*----------------------------------*/
+::-webkit-scrollbar {
+  background-color: #001E2A;
+  width: 8px;
+  height: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: #26DDE9; }
+
+/*----------------------------------*/
 /* CENTER FUNCTION */
 /*----------------------------------*/
 /* POSITION ABSOLUTE */
@@ -40,6 +51,20 @@
   flex-direction: column;
   justify-content: center; }
 
+.flex-l {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+.flex-r {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+/* MARGIN */
+.mcenter {
+  margin: 0 auto; }
+
 /* FONT */
 .fcenter {
   text-align: center; }
@@ -63,6 +88,9 @@
 .m1 {
   margin: 20px; }
 
+.ml {
+  margin-left: 20px; }
+
 /*----------------------------------*/
 /* SPACE */
 /*----------------------------------*/
@@ -85,12 +113,79 @@ h1 {
   width: 100%;
   text-transform: uppercase; }
 
+h2 {
+  font-family: Roboto-M;
+  color: #001E2A;
+  padding-bottom: 10vh;
+  font-size: 40pt;
+  width: 100%;
+  text-align: center; }
+
+h3 {
+  font-family: Roboto-M;
+  color: #001E2A;
+  font-size: 20pt;
+  width: 100%;
+  text-align: center;
+  transition: color 0.2s ease; }
+
+h4 {
+  font-family: Roboto-M;
+  color: #FFF;
+  font-size: 26pt;
+  width: 100%;
+  text-align: center;
+  transition: color 0.2s ease;
+  border-bottom: 4px solid #FFF; }
+
+h5 {
+  font-size: 40pt;
+  color: #FFF;
+  font-family: Roboto-M;
+  padding-bottom: 10vh;
+  width: 100%;
+  text-align: center; }
+
 /*----------------------------------*/
 /* TEXT */
 /*----------------------------------*/
 article {
   font-family: Roboto-R;
-  color: #004A59;
+  color: #26DDE9;
   font-size: 20pt; }
+
+.TextBox1 {
+  font-family: Roboto-R;
+  font-size: 16pt;
+  color: #535353;
+  padding: 50px;
+  width: 70%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.53);
+  border-radius: 50px; }
+
+.TextBox1 b {
+  font-size: 20pt;
+  color: #001E2A; }
+
+/*----------------------------------*/
+/* DESIGN */
+/*----------------------------------*/
+.BG {
+  background-color: #001E2A; }
+
+section {
+  width: 100%; }
+
+/*----------------------------------*/
+/* Animation */
+/*----------------------------------*/
+.FadeIn {
+  transform: scale(1); }
+
+.FadeOut {
+  transform: scale(0); }
+
+.none {
+  display: none; }
 
 /*# sourceMappingURL=function.css.map */
