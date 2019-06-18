@@ -535,6 +535,9 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.THEMA > a {
+  text-decoration: none; }
+
 .thementext {
   padding: 20px;
   font-family: Roboto-R;
