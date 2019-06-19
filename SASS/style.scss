@@ -945,6 +945,18 @@ option {
 
 .imageboxes:hover {
   transform: scale(1.1);
+opacity: 0.8;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
+}
+
+.NoZoom{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.NoZoom:hover{
+    opacity: 1;
+    transform: scale(1);
 }
 
 .imagelink {
@@ -961,11 +973,6 @@ option {
   //transform: scale(1.1);
   z-index: 10;
   background-color: white;
-}
-
-.imageboxes:hover {
-  opacity: 0.8;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.50);
 }
 
 .GalleryWrap {

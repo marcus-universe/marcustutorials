@@ -992,7 +992,20 @@ option {
 
 .imageboxes:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1); }
+          transform: scale(1.1);
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
+
+.NoZoom {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
+
+.NoZoom:hover {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
 
 .imagelink {
   margin: 5px;
@@ -1008,11 +1021,6 @@ option {
 .imagelink:hover {
   z-index: 10;
   background-color: white; }
-
-.imageboxes:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
 
 .GalleryWrap {
   -ms-flex-wrap: wrap;
