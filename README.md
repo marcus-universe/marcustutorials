@@ -2,7 +2,7 @@
 Marcus Tutorials Webportfolio
 
 
-Willkommen auf mein [**Webportfolio**](https://marcustutorials.github.io) :)
+Willkommen auf mein [**Webportfolio**](https://marcustutorials.github.io/index.html) :)
 
 ### Aktueller Entwicklungsstand
 Da die Seite für mich selbst ist und ich ab und zu daran programmiere kann es sein das es noch viele Fehler gibt. 
