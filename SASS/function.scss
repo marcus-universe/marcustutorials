@@ -177,12 +177,14 @@ h3 {
 
 h4 {
     font-family: $F2;
-    color: $white;
+    color: $lightblue;
+    //color: $darkblue;
     font-size: 26pt;
     width: 100%;
     text-align: center;
     transition: color 0.2s ease;
-    border-bottom: 4px solid $white;
+    border-bottom: 4px solid $lightblue;
+    //border-bottom: 4px solid $white;
 }
 
 h5 {

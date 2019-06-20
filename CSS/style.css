@@ -673,6 +673,39 @@ body {
 
   .THEMA {
     width: 300px; } }
+.TwitterIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/Twitter_Normal.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  padding: 20px; }
+
+.TwitterThema:hover .TwitterIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/Twitter_Hover.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+
+.MailIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/email_Normal.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  padding: 20px; }
+
+.MailThema:hover .MailIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/email_Hover.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+
+.SkypeIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/Skype_Normal.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease;
+  padding: 20px; }
+
+.SkypeThema:hover .SkypeIcon {
+  background-image: url(../IMG/Icons/Social_Icon/Contact_Me/Skype_Hover.svg);
+  -webkit-transition: background 0.2s ease;
+  transition: background 0.2s ease; }
+
 /* ################################################## */
 /* Impressum */
 /* ################################################## */
@@ -741,6 +774,27 @@ body {
   height: 100vh;
   z-index: 4; }
 
+.AboutMeButton {
+  text-decoration: none;
+  color: #001E2A;
+  background-color: #26DDE9;
+  font-family: Roboto-M;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 18pt;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 50px; }
+
+.AboutMeButton:hover {
+  background-color: #001E2A;
+  color: #26DDE9;
+  -webkit-box-shadow: 0px 0px 10px #26DDE9;
+          box-shadow: 0px 0px 10px #26DDE9;
+  padding: 10px;
+  border-radius: 50px; }
+
 .ProfilBild {
   background-color: #001E2A;
   min-width: 50%;
@@ -800,7 +854,7 @@ body {
 /* SKILLS */
 .Skills {
   height: auto;
-  background-color: #1B4859;
+  background-color: #001E2A;
   padding: 0px;
   padding-bottom: 100px; }
 
@@ -808,7 +862,8 @@ body {
   width: 50%;
   padding: 100px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin: 0 3% 0 3%; }
 
 .SkillsSpalte b {
   font-family: Roboto-B;
@@ -818,8 +873,8 @@ body {
 
 .SkillsSpalte div {
   height: 30px;
-  background-color: #001E2A;
-  color: #26DDE9;
+  background-color: #26DDE9;
+  color: #001E2A;
   font-family: Roboto-M;
   font-size: 18pt;
   text-align: left;
@@ -988,14 +1043,16 @@ option {
   z-index: 2;
   -webkit-transform: scale(1);
           transform: scale(1);
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  margin: 5px; }
 
 .imageboxes:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); }
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  margin: 5px; }
 
 .NoZoom {
   -webkit-transform: scale(1);
@@ -1008,7 +1065,7 @@ option {
           transform: scale(1); }
 
 .imagelink {
-  margin: 5px;
+  padding: 5px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: all 0.3s ease;
@@ -1016,12 +1073,28 @@ option {
   z-index: 2;
   border: none;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .imagelink:hover {
   z-index: 10;
   background-color: white; }
 
+.Banner {
+  width: 711px;
+  height: 400px; }
+
+@media only screen and (min-width: 480px) and (max-width: 1279px) {
+  .Banner {
+    width: 500px; } }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .Banner {
+    min-width: 100px;
+    max-width: 400px; } }
 .GalleryWrap {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1030,7 +1103,7 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 10% 0px 10%; }
+  padding: 0px 0% 0px 0%; }
 
 .Background_Style_Gallery {
   position: absolute;

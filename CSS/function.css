@@ -166,13 +166,13 @@ h3 {
 
 h4 {
   font-family: Roboto-M;
-  color: #FFF;
+  color: #26DDE9;
   font-size: 26pt;
   width: 100%;
   text-align: center;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
-  border-bottom: 4px solid #FFF; }
+  border-bottom: 4px solid #26DDE9; }
 
 h5 {
   font-size: 40pt;
