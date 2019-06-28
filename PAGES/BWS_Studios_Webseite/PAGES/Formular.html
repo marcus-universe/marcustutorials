@@ -1,0 +1,93 @@
+<html>
+
+<head>
+
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#c6f52c">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../IMG/Icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../IMG/Icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../IMG/Icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../IMG/Icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../IMG/Icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../IMG/Icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../IMG/Icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../IMG/Icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../IMG/Icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../IMG/Icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../IMG/Icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../IMG/Icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../IMG/Icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../IMG/Icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../IMG/Icons/favicon/ms-icon-144x144.png">
+
+    <!-- TITLE -->
+    <title> BWS PRO STUDIOS/AboutUs </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/index-media.css">
+
+
+    <!-- JAVA -->
+    <script type="text/javascript" src="../JAVA/jquery.js"></script>
+    <script type="text/javascript" src="../JAVA/function.js"></script>
+    <script type="text/javascript" src="../JAVA/jquery_smoothwheel.js"></script>
+
+</head>
+
+<body id="Formular">
+
+    <header>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <ul>
+                <li><a id="navtext" href="../index.html">HOME</a></li>
+                <li><a id="navtext" href="AboutUs.html">ÜBER UNS</a></li>
+                <li><a id="navtext" href="Service.html">SERVICE</a></li>
+                <li><a id="navtext" href="#">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <h1>Kontaktieren Sie uns</h1>
+   
+    <form method="post" action="Mail.php">
+        Name: <br>
+        <input type="text" name="name" placeholder="Geben Sie ihren oder den Namen Ihres Unternehmens an">
+        <br> E-Mail Adresse: <br>
+        <input type="text" name="mail" placeholder="Geben Sie eine gültige E-Mail Adresse an"><br> Anliegen: <br>
+
+
+        <select name="select" placeholder="Bitte Auswählen">    
+        <label><option value="Visitenkarten">Visitenkarte</option></label>    
+        <label><option value="Flyer">Flyer</option></label>
+        <label><option value="Plakat">Plakat</option></label>
+        <label><option value="Video">Video</option></label> 
+        <label><option value="Fotografie">Fotografie</option></label> 
+        <label><option value="TV-Werbung">TV-Werbung</option></label> 
+        <label><option value="LED Tafel">LED Tafel</option></label> 
+        <label><option value="Licht">Licht</option></label> 
+        <label><option value="Webseite">Webseite</option></label> 
+        <label><option value="CDesign">Coperate Design</option></label> 
+        <label><option value="Digital">Digitaldruck</option></label> 
+        <label><option value="Folien">Folien</option></label> 
+        <label><option value="Ein anderes Anliegen">Ein anderes Anliegen</option></label> 
+        </select>
+        <br>
+        <br>
+        
+        <textarea id="message" name="nachricht" placeholder="Nachricht">  </textarea>
+        
+        <div>
+        <input type="reset" value="Abbrechen">
+        <input type="submit" value="Senden">
+        </div>
+    </form>
+
+</body>
+
+</html>
