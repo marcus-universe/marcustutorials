@@ -88,8 +88,8 @@
       background-image: url(../IMG/Design/Profil-Design/Image_Middle.png); } }
   .Profil-IMG {
     background-image: url(../IMG/Design/Profil-Design/Image_Middle.png);
-    width: 80%;
-    height: 80%;
+    width: 700px;
+    height: 700px;
     margin-top: 0px;
     -webkit-animation: MiddleAnimation 2s ease infinite;
             animation: MiddleAnimation 2s ease infinite; } }
@@ -278,8 +278,9 @@ body {
 #BGDesk {
   position: absolute;
   width: 100%;
+  height: 100%;
   left: 50%;
-  top: 40%;
+  top: 50%;
   display: block;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -298,7 +299,7 @@ body {
     overflow: hidden; }
 
   #BGDesk {
-    top: 35%;
+    top: 0%;
     overflow: hidden; } }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .HEAD {
