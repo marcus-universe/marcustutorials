@@ -69,8 +69,9 @@
     background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
     width: 480px;
     height: 480px;
-    -webkit-animation: SmallAnimation 2s ease infinite;
-            animation: SmallAnimation 2s ease infinite; } }
+    -webkit-animation: SmallAnimation 4s ease infinite;
+            animation: SmallAnimation 4s ease infinite;
+    display: none; } }
 @media only screen and (min-width: 480px) and (max-width: 1279px) {
   @-webkit-keyframes MiddleAnimation {
     0% {
@@ -373,6 +374,20 @@ body {
   width: 30vw; }
 
 @media only screen and (min-width: 480px) and (max-width: 1279px) {
+  @-webkit-keyframes SmallAnimation {
+    0% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png); }
+    50% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Hover_Small.png); }
+    100% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png); } }
+  @keyframes SmallAnimation {
+    0% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png); }
+    50% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Hover_Small.png); }
+    100% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png); } }
   .DarkBlue-BG {
     position: relative;
     width: 100%;
@@ -380,8 +395,9 @@ body {
 
   .BGhalf {
     position: relative;
-    width: 100%;
-    height: 100%; }
+    width: 0%;
+    height: 0%;
+    display: none; }
 
   .ProfilSeite {
     height: auto;
@@ -404,11 +420,26 @@ body {
         -ms-flex-pack: center;
             justify-content: center; }
 
+  .ArticleProfil:after {
+    content: "";
+    background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    -webkit-animation: SmallAnimation 4s ease infinite;
+            animation: SmallAnimation 4s ease infinite;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; }
+
   .ArticleProfil > div {
-    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
     padding: 20px;
-    border: 4px solid #1B4859;
+    border: 0px solid #1B4859;
     border-radius: 30px; }
 
   .ProfilText {
@@ -463,7 +494,13 @@ body {
             flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    border: 0; }
+
+  .ArticleProfil > div {
+    border: 0px solid #1B4859;
+    -webkit-filter: none;
+            filter: none; }
 
   .ProfilText {
     width: auto;
@@ -647,7 +684,10 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .THEMA {
+    margin: 10% 10px 0px 10px; } }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .ThemenSECTION {
     padding-top: 50px;
@@ -1089,10 +1129,24 @@ option {
   width: 711px;
   height: 400px; }
 
+.YTVideo {
+  background-clip: content-box;
+  background-size: contain;
+  height: 400px;
+  width: 711px; }
+
 @media only screen and (min-width: 480px) and (max-width: 1279px) {
   .Banner {
-    width: 500px; } }
+    width: 500px; }
+
+  .YTVideo {
+    width: 711px;
+    height: 350px; } }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
+  .YTVideo {
+    width: 100vw;
+    height: 100px; }
+
   .Banner {
     min-width: 100px;
     max-width: 400px; } }
@@ -1104,7 +1158,9 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0px 0% 0px 0%; }
+  padding: 0px 10% 0px 10%;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease; }
 
 .Background_Style_Gallery {
   position: absolute;

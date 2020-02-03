@@ -289,6 +289,20 @@ body {
 
 @include tablet {
 
+       @keyframes SmallAnimation {
+    0% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    }
+
+    50% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Hover_Small.png);
+    }
+
+    100% {
+      background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+    }
+  }
+    
     .DarkBlue-BG {
         position: relative;
         width: 100%;
@@ -297,8 +311,9 @@ body {
 
     .BGhalf {
         position: relative;
-        width: 100%;
-        height: 100%;
+        width: 0%;
+        height: 0%;
+        display: none; 
     }
 
     .ProfilSeite {
@@ -318,12 +333,32 @@ body {
         flex-direction: row;
         justify-content: center;
 
+
+    }
+    
+
+
+    .ArticleProfil:after {
+        content: "";
+        background-image: url(../IMG/Design/Profil-Design/Image_Small.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        animation: SmallAnimation 4s ease infinite;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
     }
 
     .ArticleProfil > div {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
+        //box-shadow: 0 0 30px rgba(0, 0, 0, 0.54);
         padding: 20px;
-        border: 4px solid $middleblue;
+        border: 0px solid $middleblue;
         border-radius: 30px;
     }
 
@@ -378,6 +413,12 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        border: 0;
+    }
+
+    .ArticleProfil > div {
+        border: 0px solid $middleblue;
+        filter: none;
     }
 
     .ProfilText {
@@ -560,6 +601,11 @@ body {
         margin: 0 auto;
 
     }
+    
+    .THEMA{
+        margin: 10% 10px 0px 10px;
+        
+    }
 
 }
 
@@ -734,7 +780,7 @@ body {
     padding: 10px;
     transition: all 0.5s ease;
     border-radius: 00px;
-    
+
 }
 
 .AboutMeButton:hover {
@@ -834,24 +880,20 @@ body {
     width: 50%;
     padding: 100px;
     flex-wrap: wrap;
-    margin: 0 3% 0 3%;
-//background-color: white;
+    margin: 0 3% 0 3%; //background-color: white;
 }
 
 .SkillsSpalte b {
     font-family: $F3;
     font-size: 20pt;
-    color: $lightblue;
-    //color: $darkblue;
+    color: $lightblue; //color: $darkblue;
     padding-bottom: 50px;
 }
 
 .SkillsSpalte div {
     height: 30px;
-    background-color: $lightblue;
-    //background-color: $darkblue;
-    color: $darkblue;
-    //color: $lightblue;
+    background-color: $lightblue; //background-color: $darkblue;
+    color: $darkblue; //color: $lightblue;
     font-family: $F2;
     font-size: 18pt;
     text-align: left;
@@ -1049,21 +1091,42 @@ option {
 .Banner {
     width: 711px;
     height: 400px;
-    
+
+}
+
+.YTVideo{
+    background-clip: content-box;
+    background-size: contain;
+    height: 400px;
+    width: 711px;
 }
 
 @include tablet {
-    
+
     .Banner {
         width: 500px;
     }
+    
+    .YTVideo{
+        //width: 711vmin;
+        //height: 400vmin;
+        width: 711px;
+        height: 350px;
+    }
+    
 }
 
 @include phone {
     
+    
+    .YTVideo{
+        width: 100vw;
+        height: 100px;
+    }
+
     .Banner {
         min-width: 100px;
-        max-width: 400px
+        max-width: 400px;
     }
 }
 
@@ -1071,7 +1134,8 @@ option {
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
-    padding: 0px 0% 0px 0%;
+    padding: 0px 10% 0px 10%;
+    transition: all 2s ease;
 }
 
 .Background_Style_Gallery {
